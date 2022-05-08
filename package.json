@@ -2,7 +2,7 @@
   "name": "hungarian-accents",
   "displayName": "Hungarian Accents",
   "description": "Switches non-accented Hungarian words to accented Hungarian words.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "BSD-3-Clause",
   "publisher": "darktohka",
   "icon": "images/icon.png",
