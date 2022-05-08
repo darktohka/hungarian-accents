@@ -1,0 +1,24 @@
+name: Autobuild extension
+
+on: [push, workflow_dispatch, repository_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Yarn packages
+        run: |
+          yarn install
+      - name: Lint extension
+        run: |
+          yarn lint
+      - name: Package extension
+        run: |
+          yarn package
+      - name: Upload extension
+        uses: actions/upload-artifact@v3
+        with:
+          name: hungarian-accents
+          path: "*.vsix"
