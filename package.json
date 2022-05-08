@@ -2,7 +2,7 @@
   "name": "hungarian-accents",
   "displayName": "Hungarian Accents",
   "description": "Switches non-accented Hungarian words to accented Hungarian words.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "BSD-3-Clause",
   "publisher": "darktohka",
   "icon": "images/icon.png",
@@ -40,7 +40,8 @@
     "build": "esbuild ./src/extension.ts --minify --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
     "watch": "yarn run build -- --sourcemap --watch",
     "lint": "eslint src --ext ts",
-    "package": "vsce package"
+    "package": "vsce package",
+    "vspublish": "vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.14.0",
