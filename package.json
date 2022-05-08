@@ -4,7 +4,7 @@
   "description": "Switches non-accented Hungarian words to accented Hungarian words.",
   "version": "1.0.0",
   "license": "BSD-3-Clause",
-  "publisher": "Derzsi Dániel",
+  "publisher": "darktohka",
   "engines": {
     "vscode": "^1.55.0"
   },
